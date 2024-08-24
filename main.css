@@ -1,0 +1,183 @@
+.contacts {
+    display: flex;
+    justify-content: center;
+
+}
+
+body {
+    font-family: Roboto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    content: " ";
+    fill: #2F9C95;
+
+}
+
+.logo:hover {
+    transition: 0.25s ease;
+    transform: scale(1.75);
+    cursor: pointer;
+}
+
+/*
+.linkedin {
+        background: url(./Images/Icons/icons8-linkedin-2-500.svg) no-repeat center;
+    background-size: contain;
+
+}
+
+.linkedin:hover {
+   
+    background: url(./Images/Icons/animation_500_lcp297by.gif) no-repeat center;
+    background-size: contain;
+} */
+.github {
+    background: url(./Images/Icons/icons8-github-500.svg) no-repeat center;
+    background-size: contain;
+}
+
+.github:hover {
+    background: url(./Images/Icons/color/GitHub-Logo.svg) no-repeat center;
+    background-size: contain;
+}
+
+.facebook {
+    background: url(./Images/Icons/icons8-facebook-500.svg) no-repeat center;
+    background-size: contain;
+}
+
+.facebook:hover {
+    background: url(./Images/Icons/color/Facebook-f_Logo-Blue-Logo.svg) no-repeat center;
+
+    background-size: contain;
+}
+
+.twitter {
+    background: url(./Images/Icons/icons8-twitter-500.svg) no-repeat center;
+    background-size: contain;
+}
+
+.twitter:hover {
+    background: url(./Images/Icons/color/Twitter-Logo.svg) no-repeat center;
+
+    background-size: contain;
+}
+
+.youtube {
+    background: url(./Images/Icons/youtube-symbol-svgrepo-com.svg) no-repeat center;
+    background-size: contain;
+}
+
+.youtube:hover {
+    background: url(./Images/Icons/color/YouTube-Icon-Full-Color-Logo.svg) no-repeat center;
+    background-size: contain;
+}
+
+.discord {
+    background: url(./Images/Icons/discord-alt-svgrepo-com.svg) no-repeat center;
+    background-size: contain;
+}
+
+.discord:hover {
+    background: url(./Images/Icons/color/discord-01.svg) no-repeat center;
+    background-size: contain;
+}
+
+.bodymovinanim {
+    height: 80px;
+    width: 80px;
+    /* margin-bottom: 30px; */
+    cursor: pointer;
+}
+
+.bodymovinanim:hover {
+    color: fill(#1275b1);
+    stroke: 1px #1275b1;
+}
+
+.name p {
+    padding: none;
+    margin-top: 0px;
+    font-family: Aakar;
+    font-size: 50px;
+    transition: 0.25s ease;
+
+}
+
+.name:hover {
+    margin-top: 20px;
+    transition: 0.25s ease;
+    transform: scale(1.5);
+    color: #1275b1;
+    stroke: 1px #1275b1;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    right: 15px;
+    top: 15px;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {}
+
+/* default styles */
+.modal {
+    position: fixed;
+    width: 80%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+}
+
+/* media queries for different screen sizes */
+@media (max-width: 768px) {
+    .modal {
+        width: 90%;
+        left: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal {
+        width: 95%;
+        left: 2.5%;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-right: 20px;
+}
