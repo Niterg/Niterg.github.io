@@ -1,4 +1,4 @@
-# Parag Niraula
+# P Niraula
  
 ## SUMMARY
 As a highly self-motivated, confident, and passionate high school graduate freshman student, I am seeking to apply for an entry-level job. I offer dedication, responsibility, passion, and quality work. Despite having no prior experience, I am exceptionally curious to learn and gain new knowledge. With proper training and guidelines, I am capable of discovering, following, impressing, and achieving success for the mutual benefit of both the organization and myself. I look forward to meeting new connections and am highly interested in networking. I am always an enthusiastic student eager to learn, gain experience, and develop skills.
