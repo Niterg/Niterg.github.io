@@ -8,6 +8,12 @@ a {
     text-decoration: none;
 }
 
+strong {
+    font-family: 'Poppins medium';
+    font-weight: none;
+
+}
+
 a:visited {
     color: #0a494e;
 }
@@ -25,24 +31,4 @@ h1, h2, h3, h4 {
     font-family: Poppins Medium;
     color: #0a494e;
 
-}
-
-.justify-content-start {
-    justify-content: flex-start !important;
-}
-
-.justify-content-end {
-    justify-content: flex-end !important;
-}
-
-.justify-content-center {
-    justify-content: center !important;
-}
-
-.justify-content-between {
-    justify-content: space-between !important;
-}
-
-.justify-content-around {
-    justify-content: space-around !important;
 }
