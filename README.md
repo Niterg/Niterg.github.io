@@ -1,53 +1,55 @@
-# P Niraula
- 
-## SUMMARY
-As a highly self-motivated, confident, and passionate high school graduate freshman student, I am seeking to apply for an entry-level job. I offer dedication, responsibility, passion, and quality work. Despite having no prior experience, I am exceptionally curious to learn and gain new knowledge. With proper training and guidelines, I am capable of discovering, following, impressing, and achieving success for the mutual benefit of both the organization and myself. I look forward to meeting new connections and am highly interested in networking. I am always an enthusiastic student eager to learn, gain experience, and develop skills.
+# Parag Niraula
+[ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" height="48" alt="linkedin logo"  />
+  <img width="12" />](https://www.linkedin.com/in/parag-niraula-5002991a3/)
+[ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="48" alt="github logo" style="background-color:white; border-radius: 5px;" />
+  <img width="12" />](https://github.com/Niterg)
 
-## WORK EXPERIENCE
-Nepal Koi Company [LinkedIn] 					       May, 2020 – Jan, 2021 
-Language Translator Remote via Online 
-Translated English Language into Nepali (Unicode)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FNiterg%2FNiterg.github.io&count_bg=%236A5298&title_bg=%23000000&icon=opsgenie.svg&icon_color=%23FFFFFF&title=Profile+Visits&edge_flat=false)](https://hits.seeyoufarm.com) 
 
-## EDUCATION
-- Orchid International College 					       April, 2020 – Present 
-Bijayachowk, Kathmandu 
-B.Sc. CSIT (Currently in 7th Semester) 
+### Languages and Tools Proficiency:
 
-- Kathmandu Model College 				 	      July, 2017 – June, 2019 
-Baghbazar, Kathmandu 
-+2 Level Science in Physical Stream
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="48" alt="git logo"  />
+  <img width="12" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="48" alt="gitlab logo"  />
+  <img width="12" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="48" alt="linux logo"  />
+  <img width="12" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="48" alt="c logo"  />
+  <img width="12" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="48" alt="cpp logo"  />
+  <img width="12" />
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="50" alt="python logo"  />
+  <img width="12" />
 
-## CERTIFICATIONS
-Front End Development 
-Jul 2022 
-Oracle Cloud Infrastructure Developer 2020 Certified Associate	
-Jul 2020 – Jan 2022
-Oracle Cloud Infrastructure Foundations 2020 Certified Associate	
-Apr 2020 – Oct 2021
-Oracle Cloud Infrastructure 2019 Cloud Operations Certified Associate 
-Jul 2020 – Jan 2022
-Oracle Cloud Infrastructure 2019 Architect Associate			
-May 2020 – Nov 2021
-Oracle Autonomous Database Cloud 2019 Certified Specialist	
-Apr 2020 – Oct 2021
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" height="48" alt="python logo"  />
+  <img width="12" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" height="48" alt="firebase logo"  />
+  <img width="12" />
+  <img src="./Projects/Assets/images/amazon_web_services_logo.jfif" height="48" style=" border-radius: 5px;" alt="aws logo"  />
+  <img width="12" />
+  <img src="./Projects/Assets/images/oracle_logo.jfif" height="48" style=" border-radius: 5px;" alt="oracle logo"  />
+  <img width="12" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg" height="48" alt="postgres logo"  />
+  <img width="12" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" height="48" alt="docker logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="48" alt="kubernetes logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" height="48" alt="jenkins logo"  />
+  <img width="12" />
 
-## ADDITIONAL APTITUDES
-Adobe Illustrator, Adobe Photoshop, C, C++, C#, Python, HTML, CSS, JavaScript, .NET Framework, System Designing, Language Translator, Visual Design, Communication, Critical & Creative Thinking
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="40" alt="flask logo" style="background-color:white; padding:3px;  border-radius: 5px; " />
+  <img width="12" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" height="40" alt="django logo" style="background-color:white; padding:3px;  border-radius: 5px;" />
+  <img width="12" />
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="48" alt="Bootstrap logo"  />
+    <img width="12" />
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="48" alt="HTML5 logo"  />
+    <img width="12" />
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="48" alt="CSS3 logo"  />
+    <img width="12" />
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" height="48" alt="Adobe Illustrator logo" style=" border-radius: 5px;" />
+    <img width="12" />
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" height="48" alt="Adobe Photoshop logo"  />
+    <img width="12" />
 
-## REFERENCES
-Dipak Rijal [LinkedIn]
-AWS Senior Support Developer
-Auckland, New Zealand 
-Email: dipak.rijal5@gmail.com 
-+64 27 180 01226 
-	
-Lokmani Dahal [LinkedIn]
-Restaurant Manager 
-New South Wales, Australia 
-Email: lokmani.dahal5@gmail.com 
-
-Nabin Bhatta [LinkedIn]
-	Business Consultant [Founder of Shree Krishna Jyotishalaya]
-	Baneshwor, Kathmandu
-	Email: neevan.bhatta14@gmail.com
- +977 984-4163657
