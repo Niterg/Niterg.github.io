@@ -3,8 +3,8 @@
   <img width="12" />](https://www.linkedin.com/in/parag-niraula-5002991a3/)
 [ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="48" alt="github logo" style="background-color:white; border-radius: 5px;" />
   <img width="12" />](https://github.com/Niterg)
+  
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FNiterg%2FNiterg.github.io&count_bg=%236A5298&title_bg=%23000000&icon=opsgenie.svg&icon_color=%23FFFFFF&title=Profile+Visits&edge_flat=false)](https://hits.seeyoufarm.com) 
 
 ### Languages and Tools Proficiency:
 

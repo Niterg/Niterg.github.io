@@ -1,5 +1,9 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-size: 18px;
 }
 
@@ -9,8 +13,9 @@ a {
 }
 
 strong {
-    font-family: 'Poppins medium';
-    font-weight: none;
+    /* font-family: 'Poppins Medium'; */
+    font-weight: 500;
+    /* font-weight: none; */
 
 }
 
@@ -27,7 +32,8 @@ p {
 }
 
 .duration, .level, .ref_info {
-    font-family: Poppins Medium;
+    /* font-family: Poppins Medium; */
+    font-weight: 500;
     color: #04098b;
     background-image: linear-gradient(45deg, #04098b 0%, #29af8e 100%, #4846ce 100%);
     background-clip: text;
@@ -36,7 +42,8 @@ p {
 }
 
 h1, h2, h3, h4 {
-    font-family: Poppins Medium;
+    /* font-family: Poppins Medium; */
+    font-weight: 500;
     color: #04098b;
     background-image: linear-gradient(45deg, #04098b 0%, #29af8e 100%, #4846ce 100%);
     background-clip: text;
