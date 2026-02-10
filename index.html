@@ -1,718 +1,390 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Parag Niraula</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-            crossorigin="anonymous"
-        >
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./Projects/Assets/CSS/main_.css">
-        <link rel="stylesheet" href="./Projects/Assets/icon/bootstrap-icons.css">
-    </head>
-    <body>
-        <!-- Page wrapper start -->
-        <div class="page-wrapper ">
-            <div class=" p-2 m-3">
-                <div class="name text-center">
-                    <h1>
-                        Parag Niraula
-                    </h1>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parag Niraula - Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#2563eb', // Blue-600
+                        secondary: '#475569', // Slate-600
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar for Webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <div id="redirectModal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full mx-4 transform scale-95 transition-transform duration-300" id="modalContent">
+            <div class="text-center">
+                <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 mb-4">
+                    <i class="bi bi-stars text-3xl text-blue-600"></i>
                 </div>
-            </div>
-            <!-- Information starts-->
-            <div class="card shadow m-3">
-                <div id="info" class="row m-3">
-                    <div class="col-lg-9 col-sm-9 p-3">
-                        <p>
-                            <a href="mailto: paragniraula@gmail.com">paragniraula@gmail.com</a>
-                        </p>
-                        <!-- <p> DOB: 20/07/2002</p> -->
-                        <p>+977-9841433513, +977-9840089119</p>
-                        <p>
-                            <!-- Kageshwari Manohara Municipality, Ward No. 8,  -->
-                            AadarshaTole, Gothatar, Kathmandu, Nepal
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-sm p-3 text-end">
-                        <div class="linkedin_link">
-                            <h4>
-                                <a href="https://www.linkedin.com/in/parag-niraula-5002991a3/" target="_blank">
-                                    <i class="bi bi-linkedin "></i>
-                                    LinkedIn
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="github_link">
-                            <h4>
-                                <a href="https://github.com/Niterg" target="_blank">
-                                    <i class="bi bi-github "></i>
-                                    <span>Github</span>
-                                </a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Information ends -->
-            <div class="row gap mx-2">
-                <div class="col-lg-12 ">
-                    <div class="row">
-                        <!-- Education Info starts -->
-                        <div class="col-lg-4 col-md-12 col-sm-12 mb-2">
-                            <div class="card shadow h-100">
-                                <div class="card-body">
-                                    <div id="Education" class="row">
-                                        <h3>
-                                            <a href="#Education">
-                                                <i class="bi bi-mortarboard "></i>
-                                                Education
-                                            </a>
-                                        </h3>
-                                        <div class="col p-3">
-                                            <div class="row g-3">
-                                                <div class="col-lg-6 col-md edu_name">
-                                                    Orchid International College |
-                                                    <i>    Bijayachowk, Kathmandu</i>
-                                                </div>
-                                                <div class="col-lg-6 col-md duration text-end">
-                                                    April, 2020 – Present
-                                                </div>
-                                            </div>
-                                            <div class="location"></div>
-                                            <div class="level">
-                                                <p>B.Sc. CSIT [Currently in 8th Semester]</p>
-                                            </div>
-                                            <div class="row b g-3 mt-3">
-                                                <div class="col-lg-6 col-md edu_name">
-                                                    Kathmandu Model College |
-                                                    <i>Baghbazar, Kathmandu</i>
-                                                </div>
-                                                <div class="col-lg-6 col-md duration text-end">
-                                                    July, 2017 – June, 2019
-                                                </div>
-                                            </div>
-                                            <div class="level">
-                                                <p>High School [Science]</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Technical Skill Info Starts -->
-                        <div class="col-lg-8 col-md-12 col-sm-12 mb-2 ">
-                            <div class="card shadow h-100">
-                                <div class="card-body">
-                                    <div id="Technical_Skills" class="row">
-                                        <h3>
-                                            <a href="#Technical_Skills">
-                                                <i class="bi bi-gear-wide-connected "></i>
-                                                Technical Skills
-                                            </a>
-                                        </h3>
-                                        <div class="col p-3">
-                                            <!--  -->
-                                            <div class="row  g-3">
-                                                <div class="col-lg-6 col-md edu_name">
-                                                    <h5>Programming Languages</h5>
-                                                </div>
-                                                <div class="col-lg-6 col-md text-end">
-                                                    Bash, C++, Python
-                                                </div>
-                                            </div>
-                                            <!--  -->
-                                            <div class="row  g-3">
-                                                <div class="col-lg-6 col-md edu_name">
-                                                    <h5>Operating Systems</h5>
-                                                </div>
-                                                <div class="col-lg-6 col-md text-end">
-                                                    Windows, Linux
-                                                </div>
-                                            </div>
-                                            <!--  -->
-                                            <div class="row  g-3">
-                                                <div class="col-lg-6 col-md edu_name">
-                                                    <h5>Version Control</h5>
-                                                </div>
-                                                <div class="col-lg-6 col-md text-end">
-                                                    Git, SCM, Mercurial
-                                                </div>
-                                            </div>
-                                            <!--  -->
-                                            <div class="row  g-3">
-                                                <div class="col-lg-6 col-md edu_name">
-                                                    <h5>CI/CD & Build Systems</h5>
-                                                </div>
-                                                <div class="col-lg-6 col-md text-end">
-                                                    GitHub Actions, GitLab CI, Jenkins
-                                                </div>
-                                            </div>
-                                            <!--  -->
-                                            <div class="row  g-3">
-                                                <div class="col-lg-6 col-md edu_name">
-                                                    <h5>DevOps & Containerization</h5>
-                                                </div>
-                                                <div class="col-lg-6 col-md text-end">
-                                                    Docker, Bash, Shell Scripting, Azure
-                                                </div>
-                                            </div>
-                                            <!--  -->
-                                            <div class="row  g-3">
-                                                <div class="col-lg-6 col-md edu_name">
-                                                    <h5>Frameworks & Backend</h5>
-                                                </div>
-                                                <div class="col-lg-6 col-md text-end">
-                                                    Django, RBAC (Role-Based Access Control), Flask
-                                                </div>
-                                            </div>
-                                            <!--  -->
-                                            <div class="row  g-3">
-                                                <div class="col-lg-6 col-md edu_name">
-                                                    <h5>Other Tools</h5>
-                                                </div>
-                                                <div class="col-lg-6 col-md text-end">
-                                                    Adobe Illustrator, Adobe Photoshop, Bootstrap
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Technical Skill Info Ends -->
-                </div>
-                <div class="col-lg-12 ">
-                    <!-- Project Info Starts -->
-                    <div class="col-lg-12 col-md-12">
-                        <div class="row">
-                            <div class="card shadow p-2">
-                                <div class="card-body">
-                                    <div id="Projects" class="row">
-                                        <h3 class="mb-3">
-                                            <a href="#Projects">
-                                                <i class="bi bi-files "></i>
-                                                Projects
-                                            </a>
-                                        </h3>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                                            <div class="card shadow h-100">
-                                                <div class="card-body">
-                                                    <div class="col">
-                                                        <div class="row ">
-                                                            <!--  -->
-                                                            <div class="col-6">
-                                                                <h5>
-                                                                    Nepal Telecom Ltd.
-                                                                </h5>
-                                                            </div>
-                                                            <div class="col-6 text-end">
-                                                                <h5>
-                                                                    Internship
-                                                                    <hr>
-                                                                </h5>
-                                                            </div>
-                                                            <div class="col-lg mb-2 col-sm ">
-                                                                <h5> Full Stack Developer (Django)</h5>
-                                                                <ul>
-                                                                    <li>	Implemented Role Based Access Control in Django application</li>
-                                                                    <li>	Extracted geojson map data using Overpass Turbo from Openstreetmap</li>
-                                                                    <li>	Integrated Firebase to store tower, user and message information</li>
-                                                                    <li>	Message sorting and various authentication based on user login</li>
-                                                                    <li>	Deployed the system in Docker and tested deployment CI using Jenkins</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                                            <div class="card shadow h-100">
-                                                <div class="card-body">
-                                                    <div class="col">
-                                                        <div class="row ">
-                                                            <!--  -->
-                                                            <div class="col-12 text-end">
-                                                                <h5>College Project</h5>
-                                                            </div>
-                                                            <div class="col-lg mb-2 col-sm ">
-                                                                <h5> Flask Application on "Order Matching and Clearing Obligations</h5>
-                                                                <ul>
-                                                                    <li>
-                                                                        Integrated
-                                                                        <strong>Flask-SocketIO</strong>
-                                                                        for real-time order book updates.
-                                                                    </li>
-                                                                    <li>
-                                                                        Developed an
-                                                                        <strong>in-memory order matching system</strong>
-                                                                        using SQLAlchemy.
-                                                                    </li>
-                                                                    <li>
-                                                                        Implemented
-                                                                        <strong>multi-threaded market simulation</strong>
-                                                                        with Python threading.
-                                                                    </li>
-                                                                    <li>
-                                                                        Optimized
-                                                                        <strong>SQL queries</strong>
-                                                                        with indexed lookups and batch transactions.
-                                                                    </li>
-                                                                    <li>
-                                                                        Designed
-                                                                        <strong>real-time trading constraint validation</strong>
-                                                                        for collateral and price limits.
-                                                                    </li>
-                                                                    <li>
-                                                                        Used
-                                                                        <strong>Flask Blueprints</strong>
-                                                                        for modular architecture and scalability.
-                                                                    </li>
-                                                                    <li>
-                                                                        Integrated
-                                                                        <strong>Pandas for CSV ingestion</strong>
-                                                                        and market data analytics.
-                                                                    </li>
-                                                                    <li>
-                                                                        Leveraged
-                                                                        <strong>WebSockets</strong>
-                                                                        for live bidirectional updates.
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                                            <div class="card shadow h-100">
-                                                <div class="card-body">
-                                                    <div class="col ">
-                                                        <div class="row ">
-                                                            <!--  -->
-                                                            <div class="col-12 text-end">
-                                                                <h5>College Project</h5>
-                                                            </div>
-                                                            <div class="col-lg mb-3 col-sm ">
-                                                                <h5>CRUD Application based on C</h5>
-                                                                <ul>
-                                                                    <li>Used memory mapped files as database</li>
-                                                                    <li>Used structures to represent entities</li>
-                                                                    <li>Used concept of primary key, foreign key to tag and correlate different entities</li>
-                                                                    <li>Used secure memory management principles as published by Microsoft (SAL)</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                                            <div class="card shadow">
-                                                <div class="card-body">
-                                                    <div class="col">
-                                                        <div class="row ">
-                                                            <!--  -->
-                                                            <div class="col-lg mb-2 col-sm ">
-                                                                <h5> Web Application for "Student Management System"</h5>
-                                                                <ul>
-                                                                    <li>Integrated ASP.NET Web Application .NET Framework</li>
-                                                                    <li>Designed and created wireframe for web prototype</li>
-                                                                    <li>Developed the backend system to manipulate the database to record the student's details within an educational institution</li>
-                                                                    <li>Integrated SQL Management Server [local server] for database access</li>
-                                                                    <li>Tested the application using Selenium</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project Info Ends -->
-                    <!-- Certificates -->
-                    <div class="col-lg-12 col-md-12 col-sm-12 mt-3 ">
-                        <div class="card shadow h-100">
-                            <div class="card-body">
-                                <div id="Certification" class="row">
-                                    <h3>
-                                        <a href="#Certification">
-                                            <i class="bi bi-award "></i>
-                                            Certifications
-                                        </a>
-                                    </h3>
-                                    <div class="col">
-                                        <div class="row ">
-                                            <!--  -->
-                                            <!-- Intel -->
-                                            <div class="col-lg-3 col-md-4 mt-3 ">
-                                                <div class="card shadow h-100 ">
-                                                    <div class="card-body">
-                                                        <div class=" edu_name">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-4 mb-3 text-center">
-                                                                    <img src="./Projects/Assets/images/intel_devops.png" alt="" class="img-fluid d-md-hide">
-                                                                </div>
-                                                                <hr>
-                                                                <div class="col-lg-12 col-md-12 duration ">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <a target="_blank" href="https://www.credly.com/badges/339d858e-3dd2-408a-a38e-b2abc03200da/public_url">
-                                                                                Cloud DevOps
-                                                                                <i class="bi bi-box-arrow-up-right small"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="col-12">
-                                                                            <div class="duration text-end">
-                                                                                Mar 2025 - Mar 2028
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-4 mt-3 ">
-                                                <div class="card shadow h-100 ">
-                                                    <div class="card-body">
-                                                        <div class=" edu_name">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-4 mb-3 text-center">
-                                                                    <img src="./Projects/Assets/images/intel_cloud_deployments.png" alt="" class="img-fluid d-md-hide">
-                                                                </div>
-                                                                <hr>
-                                                                <div class="col-lg-12 col-md-12 duration ">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <a target="_blank" href="https://www.credly.com/badges/d74c2565-7aa3-4a3b-aa64-19cf1745b076/public_url">
-                                                                                Cloud Deployments
-                                                                                <i class="bi bi-box-arrow-up-right small"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="col-12">
-                                                                            <div class="duration text-end">
-                                                                                Mar 2025 - Mar 2028
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-4 mt-3 ">
-                                                <div class="card shadow h-100 ">
-                                                    <div class="card-body">
-                                                        <div class=" edu_name">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-4 mb-3 text-center">
-                                                                    <img src="./Projects/Assets/images/intel_cloud_principles.png" alt="" class="img-fluid d-md-hide">
-                                                                </div>
-                                                                <hr>
-                                                                <div class="col-lg-12 col-md-12 duration ">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <a target="_blank" href="https://www.credly.com/badges/85670e43-2422-442d-8376-f3373e921434/">
-                                                                                Cloud Principles
-                                                                                <i class="bi bi-box-arrow-up-right small"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="col-12">
-                                                                            <div class="duration text-end">
-                                                                                Feb 2025 - Feb 2028
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- IBM -->
-                                            <!-- <div class="col-lg-3 col-md-4 mt-3 ">
-                                                <div class="card shadow h-100 ">
-                                                    <div class="card-body">
-                                                        <div class=" edu_name">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-4 mb-3 text-center">
-                                                                    <img src="./Projects/Assets/images/ibm_logo.jfif" alt="" class="img-fluid d-md-hide">
-                                                                </div>
-                                                                <hr>
-                                                                <div class="col-lg-12 col-md-12 duration ">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <a target="_blank" href="https://www.credly.com/badges/3b9c1ba4-4137-4eb6-8321-9eb6d1be6336/">
-                                                                                IBM
-                                                                                <i class="bi bi-box-arrow-up-right small"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="col-12">
-                                                                            <div class="duration text-end">
-                                                                                Mar 2025
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div> -->
-                                            <!-- AWS Educate -->
-                                            <div class="col-lg-3 col-md-4 mt-3 ">
-                                                <div class="card shadow h-100 ">
-                                                    <div class="card-body">
-                                                        <div class=" edu_name">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-4 mb-3 text-center">
-                                                                    <img src="./Projects/Assets/images/amazon_web_services_logo.jfif" alt="" class="img-fluid d-md-hide">
-                                                                </div>
-                                                                <hr>
-                                                                <div class="col-lg-12 col-md-12 duration ">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <a target="_blank" href="https://www.credly.com/badges/079b74c6-c83b-48e1-9f1b-e26172638685/public_url">
-                                                                                AWS Educate Introduction to Cloud 101
-                                                                                <i class="bi bi-box-arrow-up-right small"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="col-12">
-                                                                            <div class="duration text-end">
-                                                                                Feb 2025
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-4 mt-3 ">
-                                                <div class="card shadow h-100 ">
-                                                    <div class="card-body">
-                                                        <div class=" edu_name">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-4 mb-3 text-center">
-                                                                    <img src="./Projects/Assets/images/amazon_web_services_logo.jfif" alt="" class="img-fluid d-md-hide">
-                                                                </div>
-                                                                <hr>
-                                                                <div class="col-lg-12 col-md-12 duration ">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <a target="_blank" href="https://www.credly.com/badges/3b9c1ba4-4137-4eb6-8321-9eb6d1be6336/">
-                                                                                AWS Educate Getting Started with Compute
-                                                                                <i class="bi bi-box-arrow-up-right small"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="col-12">
-                                                                            <div class="duration text-end">
-                                                                                Feb 2025
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-4 mt-3 ">
-                                                <div class="card shadow h-100 ">
-                                                    <div class="card-body">
-                                                        <div class=" edu_name">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-4 mb-3 text-center">
-                                                                    <img src="./Projects/Assets/images/amazon_web_services_logo.jfif" alt="" class="img-fluid d-md-hide">
-                                                                </div>
-                                                                <hr>
-                                                                <div class="col-lg-12 col-md-12 duration ">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <a target="_blank" href="https://www.credly.com/badges/17b24eec-12da-4710-a61e-bf89a3b59aac/">
-                                                                                AWS Educate Introduction to Generative AI
-                                                                                <i class="bi bi-box-arrow-up-right small"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="">
-                                                                            <div class="duration text-end">
-                                                                                Feb 2025
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Oracle -->
-                                            <div class="col-lg-3 col-md-4 mt-3 ">
-                                                <div class="card shadow h-100 ">
-                                                    <div class="card-body">
-                                                        <div class=" edu_name">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-4 mb-3 text-center">
-                                                                    <img src="./Projects/Assets/images/oracle_logo.jfif" alt="" class="img-fluid d-md-hide">
-                                                                </div>
-                                                                <hr>
-                                                                <div class="col-lg-12 col-md-12 duration ">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <a target="_blank" href="https://www.credly.com/badges/b659d139-4f84-4749-af73-40a2f4944da5">
-                                                                                Oracle Cloud Infrastructure Developer 2020 Certified Associate
-                                                                                <i class="bi bi-box-arrow-up-right small"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class=" duration text-end">
-                                                                            Jul 2020 – Jan 2022
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-4 mt-3 ">
-                                                <div class="card shadow h-100 ">
-                                                    <div class="card-body">
-                                                        <!--  -->
-                                                        <div class=" edu_name">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-4 mb-3 text-center">
-                                                                    <img src="./Projects/Assets/images/oracle_logo.jfif" alt="" class="img-fluid d-md-hide">
-                                                                </div>
-                                                                <hr>
-                                                                <div class="col-lg-12 col-md-12 duration ">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <a target="_blank" href="https://www.credly.com/badges/c61e33af-16c9-4296-9e28-af529da8b921/">
-                                                                                Oracle Cloud Infrastructure Foundations 2020 Certified Associate
-                                                                                <i class="bi bi-box-arrow-up-right small"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class=" duration text-end">
-                                                                            Apr 2020 – Oct 2021
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--  -->
-                                            <div class="col-lg-3 col-md-4 mt-3 ">
-                                                <div class="card shadow h-100 ">
-                                                    <div class="card-body">
-                                                        <div class=" edu_name">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-4 mb-3 text-center">
-                                                                    <img src="./Projects/Assets/images/oracle_logo.jfif" alt="" class="img-fluid d-md-hide">
-                                                                </div>
-                                                                <hr>
-                                                                <div class="col-lg-12 col-md-12 duration ">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <a target="_blank" href="https://www.credly.com/badges/37399184-bab6-46e3-8484-ecd3fe003592">
-                                                                                Oracle Cloud Infrastructure 2019 Cloud Operations Certified Associate
-                                                                                <i class="bi bi-box-arrow-up-right small"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class=" duration text-end">
-                                                                            Jul 2020 – Jan 2022
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--  -->
-                                            <div class="col-lg-3 col-md-4 mt-3 ">
-                                                <div class="card shadow h-100 ">
-                                                    <div class="card-body">
-                                                        <div class=" edu_name">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-4 mb-3 text-center">
-                                                                    <img src="./Projects/Assets/images/oracle_logo.jfif" alt="" class="img-fluid d-md-hide">
-                                                                </div>
-                                                                <hr>
-                                                                <div class="col-lg-12 col-md-12 duration ">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <a target="_blank" href="https://www.credly.com/badges/5ce6dc6a-d1e7-41ea-a587-ee7241718959/">
-                                                                                Oracle Cloud Infrastructure 2019 Architect Associate
-                                                                                <i class="bi bi-box-arrow-up-right small"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class=" duration text-end">
-                                                                            May 2020 – Nov 2021
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--  -->
-                                            <div class="col-lg-3 col-md-4 mt-3 ">
-                                                <div class="card shadow h-100 ">
-                                                    <div class="card-body">
-                                                        <div class=" edu_name">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-4 mb-3 text-center">
-                                                                    <img src="./Projects/Assets/images/oracle_logo.jfif" alt="" class="img-fluid d-md-hide">
-                                                                </div>
-                                                                <hr>
-                                                                <div class="col-lg-12 col-md-12 duration ">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <a target="_blank" href="https://www.credly.com/badges/3b739afc-76a6-4630-847c-450f99d1202f/">
-                                                                                Oracle Autonomous Database Cloud 2019 Certified Specialist
-                                                                                <i class="bi bi-box-arrow-up-right small"></i>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class=" duration text-end">
-                                                                            Apr 2020 – Oct 2021
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Certificates Ends -->
+                <h2 class="text-2xl font-bold text-slate-900 mb-2">New Portfolio Available!</h2>
+                <p class="text-slate-600 mb-6">
+                    I have updated my portfolio with a brand new design and latest projects. Would you like to visit the new version?
+                </p>
+                <div class="flex flex-col gap-3">
+                    <a href="https://paragniraula.com.np" class="w-full inline-flex justify-center items-center px-4 py-3 bg-blue-600 border border-transparent rounded-xl font-semibold text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors shadow-lg shadow-blue-500/30">
+                        Visit paragniraula.com.np <i class="bi bi-arrow-right ml-2"></i>
+                    </a>
+                    <button onclick="closeModal()" class="w-full inline-flex justify-center items-center px-4 py-3 bg-white border border-slate-300 rounded-xl font-medium text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">
+                        Stay on this version
+                    </button>
                 </div>
             </div>
         </div>
-        <!-- Page Wrapper Ends -->
-    </body>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        
+        <header class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 mb-8 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-indigo-600"></div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-2">Parag Niraula</h1>
+                    <p class="text-lg text-slate-500 font-medium">Full Stack Developer & Cloud Enthusiast</p>
+                </div>
+                
+                <div class="flex flex-col gap-2 text-sm text-slate-600 md:text-right">
+                    <a href="mailto:paragniraula@gmail.com" class="hover:text-blue-600 transition flex items-center md:justify-end gap-2">
+                        <i class="bi bi-envelope"></i> paragniraula@gmail.com
+                    </a>
+                    <div class="flex items-center md:justify-end gap-2">
+                        <i class="bi bi-geo-alt"></i> AadarshaTole, Gothatar, Kathmandu, Nepal
+                    </div>
+                    <div class="flex items-center md:justify-end gap-2">
+                        <i class="bi bi-telephone"></i> +977-9841433513 | +977-9840089119
+                    </div>
+                    
+                    <div class="flex gap-4 justify-center md:justify-end mt-2">
+                        <a href="https://www.linkedin.com/in/parag-niraula-5002991a3/" target="_blank" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition font-medium flex items-center gap-2">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/Niterg" target="_blank" class="px-4 py-2 bg-slate-100 text-slate-800 rounded-lg hover:bg-slate-200 transition font-medium flex items-center gap-2">
+                            <i class="bi bi-github"></i> Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <div class="lg:col-span-4 space-y-8">
+                
+                <section id="Education" class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+                    <h3 class="text-xl font-bold text-slate-800 border-b border-slate-100 pb-3 mb-4 flex items-center gap-2">
+                        <i class="bi bi-mortarboard text-blue-600"></i> Education
+                    </h3>
+                    
+                    <div class="relative border-l-2 border-slate-200 ml-2 space-y-8 pl-6 py-2">
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1 h-4 w-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"></span>
+                            <h4 class="font-semibold text-slate-900">Orchid International College</h4>
+                            <p class="text-sm text-slate-500 italic mb-1">Bijayachowk, Kathmandu</p>
+                            <p class="text-xs font-semibold uppercase tracking-wider text-blue-600 mb-2">April, 2020 – Present</p>
+                            <p class="text-sm text-slate-700">B.Sc. CSIT [Currently in 8th Semester]</p>
+                        </div>
+                        
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1 h-4 w-4 rounded-full bg-slate-300 border-4 border-white shadow-sm"></span>
+                            <h4 class="font-semibold text-slate-900">Kathmandu Model College</h4>
+                            <p class="text-sm text-slate-500 italic mb-1">Baghbazar, Kathmandu</p>
+                            <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">July, 2017 – June, 2019</p>
+                            <p class="text-sm text-slate-700">High School [Science]</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="Technical_Skills" class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+                    <h3 class="text-xl font-bold text-slate-800 border-b border-slate-100 pb-3 mb-4 flex items-center gap-2">
+                        <i class="bi bi-gear-wide-connected text-blue-600"></i> Technical Skills
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Languages</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Bash</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">C++</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Python</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Frameworks & Backend</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium">Django</span>
+                                <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium">Flask</span>
+                                <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium">RBAC</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">DevOps & Cloud</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">Docker</span>
+                                <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">Azure</span>
+                                <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">Jenkins</span>
+                                <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">GitHub Actions</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">OS & Version Control</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Linux</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Git</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Mercurial</span>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Tools</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Illustrator</span>
+                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="lg:col-span-8 space-y-8">
+                <section id="Projects">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-bold text-slate-800 flex items-center gap-2">
+                            <i class="bi bi-files text-blue-600"></i> Projects
+                        </h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="flex justify-between items-start mb-3">
+                                <h4 class="text-lg font-bold text-slate-900">Nepal Telecom Ltd.</h4>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-bold uppercase rounded">Internship</span>
+                            </div>
+                            <h5 class="text-sm font-semibold text-slate-600 mb-4">Full Stack Developer (Django)</h5>
+                            <ul class="space-y-2 text-sm text-slate-600 list-disc pl-4">
+                                <li>Implemented Role Based Access Control (RBAC).</li>
+                                <li>Extracted GeoJSON map data via Overpass Turbo.</li>
+                                <li>Integrated Firebase for real-time data storage.</li>
+                                <li>Implemented deployment CI pipelines using Jenkins & Docker.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="flex justify-between items-start mb-3">
+                                <h4 class="text-lg font-bold text-slate-900">Order Matching Engine</h4>
+                                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase rounded">College</span>
+                            </div>
+                            <h5 class="text-sm font-semibold text-slate-600 mb-4">Flask Application</h5>
+                            <ul class="space-y-2 text-sm text-slate-600 list-disc pl-4">
+                                <li>Real-time updates via <strong>Flask-SocketIO</strong>.</li>
+                                <li>In-memory order matching with Python threading.</li>
+                                <li>Optimized SQL queries & real-time constraint validation.</li>
+                                <li>Modular architecture using Flask Blueprints.</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="flex justify-between items-start mb-3">
+                                <h4 class="text-lg font-bold text-slate-900">CRUD App in C</h4>
+                                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase rounded">College</span>
+                            </div>
+                            <h5 class="text-sm font-semibold text-slate-600 mb-4">System Programming</h5>
+                            <ul class="space-y-2 text-sm text-slate-600 list-disc pl-4">
+                                <li>Used memory-mapped files as a custom database.</li>
+                                <li>Implemented PK/FK logic using C structs.</li>
+                                <li>Adhered to secure memory principles (MS SAL).</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            <div class="flex justify-between items-start mb-3">
+                                <h4 class="text-lg font-bold text-slate-900">Student Mgmt System</h4>
+                                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase rounded">Web App</span>
+                            </div>
+                            <h5 class="text-sm font-semibold text-slate-600 mb-4">ASP.NET Framework</h5>
+                            <ul class="space-y-2 text-sm text-slate-600 list-disc pl-4">
+                                <li>Designed wireframes and prototypes.</li>
+                                <li>Developed backend with SQL Server integration.</li>
+                                <li>Automated testing using Selenium.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <div class="lg:col-span-12">
+                <section id="Certification" class="mt-8">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                        <i class="bi bi-award text-blue-600"></i> Certifications
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        
+                        <a href="https://www.credly.com/badges/339d858e-3dd2-408a-a38e-b2abc03200da/public_url" target="_blank" class="block group">
+                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-blue-300 hover:shadow-md transition">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="bi bi-cpu text-blue-600 text-xl"></i>
+                                    <span class="text-xs font-bold text-blue-600 uppercase">Intel</span>
+                                </div>
+                                <h4 class="font-bold text-slate-800 group-hover:text-blue-600 transition">Cloud DevOps</h4>
+                                <p class="text-xs text-slate-500 mt-2">Mar 2025 - Mar 2028</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.credly.com/badges/d74c2565-7aa3-4a3b-aa64-19cf1745b076/public_url" target="_blank" class="block group">
+                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-blue-300 hover:shadow-md transition">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="bi bi-cpu text-blue-600 text-xl"></i>
+                                    <span class="text-xs font-bold text-blue-600 uppercase">Intel</span>
+                                </div>
+                                <h4 class="font-bold text-slate-800 group-hover:text-blue-600 transition">Cloud Deployments</h4>
+                                <p class="text-xs text-slate-500 mt-2">Mar 2025 - Mar 2028</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.credly.com/badges/85670e43-2422-442d-8376-f3373e921434/" target="_blank" class="block group">
+                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-blue-300 hover:shadow-md transition">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="bi bi-cpu text-blue-600 text-xl"></i>
+                                    <span class="text-xs font-bold text-blue-600 uppercase">Intel</span>
+                                </div>
+                                <h4 class="font-bold text-slate-800 group-hover:text-blue-600 transition">Cloud Principles</h4>
+                                <p class="text-xs text-slate-500 mt-2">Feb 2025 - Feb 2028</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.credly.com/badges/079b74c6-c83b-48e1-9f1b-e26172638685/public_url" target="_blank" class="block group">
+                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-orange-300 hover:shadow-md transition">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="bi bi-amazon text-orange-500 text-xl"></i>
+                                    <span class="text-xs font-bold text-orange-500 uppercase">AWS Educate</span>
+                                </div>
+                                <h4 class="font-bold text-slate-800 group-hover:text-orange-600 transition">Intro to Cloud 101</h4>
+                                <p class="text-xs text-slate-500 mt-2">Feb 2025</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.credly.com/badges/3b9c1ba4-4137-4eb6-8321-9eb6d1be6336/" target="_blank" class="block group">
+                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-orange-300 hover:shadow-md transition">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="bi bi-amazon text-orange-500 text-xl"></i>
+                                    <span class="text-xs font-bold text-orange-500 uppercase">AWS Educate</span>
+                                </div>
+                                <h4 class="font-bold text-slate-800 group-hover:text-orange-600 transition">Generative AI</h4>
+                                <p class="text-xs text-slate-500 mt-2">Feb 2025</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.credly.com/badges/b659d139-4f84-4749-af73-40a2f4944da5" target="_blank" class="block group">
+                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-red-300 hover:shadow-md transition">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="bi bi-database text-red-600 text-xl"></i>
+                                    <span class="text-xs font-bold text-red-600 uppercase">Oracle</span>
+                                </div>
+                                <h4 class="font-bold text-slate-800 group-hover:text-red-600 transition">OCI Developer 2020</h4>
+                                <p class="text-xs text-slate-500 mt-2">Jul 2020 – Jan 2022</p>
+                            </div>
+                        </a>
+                        
+                         <a href="https://www.credly.com/badges/c61e33af-16c9-4296-9e28-af529da8b921/" target="_blank" class="block group">
+                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-red-300 hover:shadow-md transition">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="bi bi-database text-red-600 text-xl"></i>
+                                    <span class="text-xs font-bold text-red-600 uppercase">Oracle</span>
+                                </div>
+                                <h4 class="font-bold text-slate-800 group-hover:text-red-600 transition">OCI Foundations</h4>
+                                <p class="text-xs text-slate-500 mt-2">Apr 2020 – Oct 2021</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.credly.com/badges/37399184-bab6-46e3-8484-ecd3fe003592" target="_blank" class="block group">
+                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-red-300 hover:shadow-md transition">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="bi bi-database text-red-600 text-xl"></i>
+                                    <span class="text-xs font-bold text-red-600 uppercase">Oracle</span>
+                                </div>
+                                <h4 class="font-bold text-slate-800 group-hover:text-red-600 transition">Cloud Operations</h4>
+                                <p class="text-xs text-slate-500 mt-2">Jul 2020 – Jan 2022</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer class="mt-12 border-t border-slate-200 pt-6 text-center text-slate-500 text-sm">
+            <p>&copy; 2025 Parag Niraula. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('redirectModal');
+            
+            // Show modal after a small delay for smoother UX
+            setTimeout(() => {
+                modal.classList.remove('opacity-0', 'pointer-events-none');
+            }, 500);
+        });
+
+        function closeModal() {
+            const modal = document.getElementById('redirectModal');
+            const content = document.getElementById('modalContent');
+            
+            // Add scale down animation
+            content.classList.remove('scale-100');
+            content.classList.add('scale-95');
+            
+            // Fade out
+            modal.classList.add('opacity-0');
+            
+            setTimeout(() => {
+                modal.classList.add('pointer-events-none');
+            }, 300);
+        }
+    </script>
+</body>
 </html>
