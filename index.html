@@ -7,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -18,372 +18,305 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'], // Acts as the Aeonik replacement
                     },
                     colors: {
-                        primary: '#2563eb', // Blue-600
-                        secondary: '#475569', // Slate-600
+                        dark: '#0f172a',
+                        surface: '#f8fafc',
                     }
                 }
             }
         }
     </script>
-
     <style>
-        /* Custom scrollbar for Webkit */
-        ::-webkit-scrollbar {
-            width: 8px;
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
         }
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1; 
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8; 
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="bg-surface text-slate-600 antialiased selection:bg-black selection:text-white">
 
-    <div id="redirectModal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none">
-        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full mx-4 transform scale-95 transition-transform duration-300" id="modalContent">
-            <div class="text-center">
-                <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 mb-4">
-                    <i class="bi bi-stars text-3xl text-blue-600"></i>
+    <div id="redirectModal" class="fixed inset-0 z-50 flex items-center justify-center bg-white/80 backdrop-blur-md transition-opacity duration-500 opacity-0 pointer-events-none">
+        <div class="bg-white border border-slate-200 shadow-2xl rounded-2xl p-8 max-w-sm w-full mx-4 transform scale-95 transition-all duration-500" id="modalContent">
+            <div class="flex flex-col items-center text-center">
+                <div class="h-12 w-12 bg-black text-white rounded-full flex items-center justify-center mb-5">
+                    <i class="bi bi-arrow-up-right text-xl"></i>
                 </div>
-                <h2 class="text-2xl font-bold text-slate-900 mb-2">New Portfolio Available!</h2>
-                <p class="text-slate-600 mb-6">
-                    I have updated my portfolio with a brand new design and latest projects. Would you like to visit the new version?
+                <h2 class="font-display text-2xl font-medium text-black mb-2">New Portfolio Available</h2>
+                <p class="text-slate-500 mb-6 leading-relaxed">
+                    I've migrated to a new domain with an updated design.
                 </p>
-                <div class="flex flex-col gap-3">
-                    <a href="https://paragniraula.com.np" class="w-full inline-flex justify-center items-center px-4 py-3 bg-blue-600 border border-transparent rounded-xl font-semibold text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors shadow-lg shadow-blue-500/30">
-                        Visit paragniraula.com.np <i class="bi bi-arrow-right ml-2"></i>
-                    </a>
-                    <button onclick="closeModal()" class="w-full inline-flex justify-center items-center px-4 py-3 bg-white border border-slate-300 rounded-xl font-medium text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">
-                        Stay on this version
-                    </button>
-                </div>
+                <a href="https://paragniraula.com.np" class="w-full py-3 bg-black text-white rounded-lg font-medium hover:bg-slate-800 transition-colors mb-3">
+                    Visit paragniraula.com.np
+                </a>
+                <button onclick="closeModal()" class="text-sm text-slate-400 hover:text-black transition-colors">
+                    Stay here for now
+                </button>
             </div>
         </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        
-        <header class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 mb-8 relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-indigo-600"></div>
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="text-center md:text-left">
-                    <h1 class="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-2">Parag Niraula</h1>
-                    <p class="text-lg text-slate-500 font-medium">Full Stack Developer & Cloud Enthusiast</p>
-                </div>
-                
-                <div class="flex flex-col gap-2 text-sm text-slate-600 md:text-right">
-                    <a href="mailto:paragniraula@gmail.com" class="hover:text-blue-600 transition flex items-center md:justify-end gap-2">
-                        <i class="bi bi-envelope"></i> paragniraula@gmail.com
-                    </a>
-                    <div class="flex items-center md:justify-end gap-2">
-                        <i class="bi bi-geo-alt"></i> AadarshaTole, Gothatar, Kathmandu, Nepal
-                    </div>
-                    <div class="flex items-center md:justify-end gap-2">
-                        <i class="bi bi-telephone"></i> +977-9841433513 | +977-9840089119
-                    </div>
-                    
-                    <div class="flex gap-4 justify-center md:justify-end mt-2">
-                        <a href="https://www.linkedin.com/in/parag-niraula-5002991a3/" target="_blank" class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition font-medium flex items-center gap-2">
-                            <i class="bi bi-linkedin"></i> LinkedIn
-                        </a>
-                        <a href="https://github.com/Niterg" target="_blank" class="px-4 py-2 bg-slate-100 text-slate-800 rounded-lg hover:bg-slate-200 transition font-medium flex items-center gap-2">
-                            <i class="bi bi-github"></i> Github
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+    <div class="max-w-screen-xl mx-auto px-6 py-12 lg:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
             
-            <div class="lg:col-span-4 space-y-8">
+            <header class="lg:col-span-4 lg:sticky lg:top-24 lg:h-fit">
+                <div class="space-y-8">
+                    <div>
+                        <h1 class="font-display text-4xl lg:text-5xl font-medium text-black tracking-tight mb-4">
+                            Parag Niraula
+                        </h1>
+                        <p class="font-display text-lg text-slate-500 font-normal">
+                            Full Stack Developer &<br>Cloud Infrastructure Specialist
+                        </p>
+                    </div>
+
+                    <div class="space-y-3 font-sans text-sm">
+                        <a href="mailto:paragniraula@gmail.com" class="flex items-center gap-3 text-slate-600 hover:text-black transition group">
+                            <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-black group-hover:text-white transition">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <span>paragniraula@gmail.com</span>
+                        </a>
+                        <div class="flex items-center gap-3 text-slate-600">
+                            <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <span>Kathmandu, Nepal</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-600">
+                             <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <span>+977-9841433513</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 pt-2">
+                        <a href="https://www.linkedin.com/in/parag-niraula-5002991a3/" target="_blank" class="h-10 w-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-600 hover:border-black hover:bg-black hover:text-white transition">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Niterg" target="_blank" class="h-10 w-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-600 hover:border-black hover:bg-black hover:text-white transition">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <main class="lg:col-span-8 space-y-20">
                 
-                <section id="Education" class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-                    <h3 class="text-xl font-bold text-slate-800 border-b border-slate-100 pb-3 mb-4 flex items-center gap-2">
-                        <i class="bi bi-mortarboard text-blue-600"></i> Education
-                    </h3>
+                <section>
+                    <h3 class="font-display text-sm uppercase tracking-widest text-slate-400 mb-8">Education</h3>
+                    <div class="space-y-8">
+                        <div class="group grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 items-baseline">
+                            <div class="md:col-span-1 text-sm text-slate-400 font-medium">2020 — Present</div>
+                            <div class="md:col-span-3">
+                                <h4 class="font-display text-lg text-black font-medium group-hover:text-blue-600 transition">
+                                    B.Sc. CSIT
+                                </h4>
+                                <p class="text-slate-500 mb-1">Orchid International College</p>
+                                <p class="text-sm text-slate-400">Currently in 8th Semester • Kathmandu</p>
+                            </div>
+                        </div>
+                        <div class="group grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 items-baseline">
+                            <div class="md:col-span-1 text-sm text-slate-400 font-medium">2017 — 2019</div>
+                            <div class="md:col-span-3">
+                                <h4 class="font-display text-lg text-black font-medium group-hover:text-blue-600 transition">
+                                    High School (Science)
+                                </h4>
+                                <p class="text-slate-500 mb-1">Kathmandu Model College</p>
+                                <p class="text-sm text-slate-400">Baghbazar, Kathmandu</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="font-display text-sm uppercase tracking-widest text-slate-400 mb-8">Technical Expertise</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 border border-slate-200 rounded-full text-sm font-medium hover:border-black cursor-default transition">Python</span>
+                        <span class="px-4 py-2 border border-slate-200 rounded-full text-sm font-medium hover:border-black cursor-default transition">C++</span>
+                        <span class="px-4 py-2 border border-slate-200 rounded-full text-sm font-medium hover:border-black cursor-default transition">Django</span>
+                        <span class="px-4 py-2 border border-slate-200 rounded-full text-sm font-medium hover:border-black cursor-default transition">Flask</span>
+                        <span class="px-4 py-2 border border-slate-200 rounded-full text-sm font-medium hover:border-black cursor-default transition">Docker</span>
+                        <span class="px-4 py-2 border border-slate-200 rounded-full text-sm font-medium hover:border-black cursor-default transition">Kubernetes</span>
+                        <span class="px-4 py-2 border border-slate-200 rounded-full text-sm font-medium hover:border-black cursor-default transition">Jenkins</span>
+                        <span class="px-4 py-2 border border-slate-200 rounded-full text-sm font-medium hover:border-black cursor-default transition">Azure</span>
+                        <span class="px-4 py-2 border border-slate-200 rounded-full text-sm font-medium hover:border-black cursor-default transition">Linux/Bash</span>
+                        <span class="px-4 py-2 border border-slate-200 rounded-full text-sm font-medium hover:border-black cursor-default transition">Git</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="font-display text-sm uppercase tracking-widest text-slate-400 mb-8">Selected Projects</h3>
+                    <div class="space-y-12">
+                        
+                        <div class="group flex flex-col md:flex-row gap-6 hover:bg-slate-50 p-4 -mx-4 rounded-xl transition-colors">
+                            <div class="md:w-1/4">
+                                <div class="text-xs font-bold text-blue-600 uppercase tracking-wide mb-1">Internship</div>
+                                <div class="font-display text-sm text-black">Nepal Telecom</div>
+                            </div>
+                            <div class="md:w-3/4 space-y-3">
+                                <h4 class="font-display text-xl text-black font-medium flex items-center gap-2">
+                                    Full Stack Developer
+                                    <i class="bi bi-arrow-right -rotate-45 text-slate-300 group-hover:text-black group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"></i>
+                                </h4>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Engineered a Role Based Access Control system and integrated GeoJSON map data for telecom tower visualization. Deployed via Docker and maintained CI pipelines using Jenkins.
+                                </p>
+                                <div class="flex gap-2 flex-wrap text-xs font-mono text-slate-500 pt-2">
+                                    <span class="bg-white border px-2 py-1 rounded">Django</span>
+                                    <span class="bg-white border px-2 py-1 rounded">Firebase</span>
+                                    <span class="bg-white border px-2 py-1 rounded">Docker</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group flex flex-col md:flex-row gap-6 hover:bg-slate-50 p-4 -mx-4 rounded-xl transition-colors">
+                            <div class="md:w-1/4">
+                                <div class="text-xs font-bold text-emerald-600 uppercase tracking-wide mb-1">FinTech</div>
+                                <div class="font-display text-sm text-black">College Project</div>
+                            </div>
+                            <div class="md:w-3/4 space-y-3">
+                                <h4 class="font-display text-xl text-black font-medium flex items-center gap-2">
+                                    Order Matching Engine
+                                    <i class="bi bi-arrow-right -rotate-45 text-slate-300 group-hover:text-black group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"></i>
+                                </h4>
+                                <p class="text-slate-600 leading-relaxed">
+                                    A real-time trading engine using Flask and WebSockets. Implemented multi-threaded market simulation and in-memory order matching algorithms for high-frequency updates.
+                                </p>
+                                <div class="flex gap-2 flex-wrap text-xs font-mono text-slate-500 pt-2">
+                                    <span class="bg-white border px-2 py-1 rounded">Flask</span>
+                                    <span class="bg-white border px-2 py-1 rounded">SocketIO</span>
+                                    <span class="bg-white border px-2 py-1 rounded">SQLAlchemy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group flex flex-col md:flex-row gap-6 hover:bg-slate-50 p-4 -mx-4 rounded-xl transition-colors">
+                            <div class="md:w-1/4">
+                                <div class="text-xs font-bold text-slate-500 uppercase tracking-wide mb-1">Systems</div>
+                                <div class="font-display text-sm text-black">C Application</div>
+                            </div>
+                            <div class="md:w-3/4 space-y-3">
+                                <h4 class="font-display text-xl text-black font-medium flex items-center gap-2">
+                                    Memory Mapped Database
+                                    <i class="bi bi-arrow-right -rotate-45 text-slate-300 group-hover:text-black group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"></i>
+                                </h4>
+                                <p class="text-slate-600 leading-relaxed">
+                                    A low-level CRUD application utilizing memory-mapped files for data persistence. Implemented custom entity tagging and secure memory management protocols (SAL).
+                                </p>
+                                <div class="flex gap-2 flex-wrap text-xs font-mono text-slate-500 pt-2">
+                                    <span class="bg-white border px-2 py-1 rounded">C Language</span>
+                                    <span class="bg-white border px-2 py-1 rounded">System Calls</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="font-display text-sm uppercase tracking-widest text-slate-400 mb-8">Certifications</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        
+                        <a href="https://www.credly.com/badges/339d858e-3dd2-408a-a38e-b2abc03200da/public_url" target="_blank" class="block p-5 border border-slate-200 rounded-lg hover:border-blue-500 hover:shadow-md transition bg-white">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h5 class="font-display text-black font-medium">Cloud DevOps</h5>
+                                    <span class="text-xs text-blue-600 font-bold uppercase mt-1 block">Intel</span>
+                                </div>
+                                <i class="bi bi-award text-slate-300"></i>
+                            </div>
+                            <div class="mt-4 text-xs text-slate-400">Valid until 2028</div>
+                        </a>
+
+                        <a href="#" class="block p-5 border border-slate-200 rounded-lg hover:border-blue-500 hover:shadow-md transition bg-white">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h5 class="font-display text-black font-medium">Cloud Deployments</h5>
+                                    <span class="text-xs text-blue-600 font-bold uppercase mt-1 block">Intel</span>
+                                </div>
+                                <i class="bi bi-award text-slate-300"></i>
+                            </div>
+                            <div class="mt-4 text-xs text-slate-400">Valid until 2028</div>
+                        </a>
+
+                        <a href="#" class="block p-5 border border-slate-200 rounded-lg hover:border-orange-500 hover:shadow-md transition bg-white">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h5 class="font-display text-black font-medium">AWS Generative AI</h5>
+                                    <span class="text-xs text-orange-500 font-bold uppercase mt-1 block">Amazon AWS</span>
+                                </div>
+                                <i class="bi bi-award text-slate-300"></i>
+                            </div>
+                            <div class="mt-4 text-xs text-slate-400">Issued 2025</div>
+                        </a>
+
+                         <a href="#" class="block p-5 border border-slate-200 rounded-lg hover:border-red-500 hover:shadow-md transition bg-white">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h5 class="font-display text-black font-medium">OCI Developer</h5>
+                                    <span class="text-xs text-red-600 font-bold uppercase mt-1 block">Oracle</span>
+                                </div>
+                                <i class="bi bi-award text-slate-300"></i>
+                            </div>
+                            <div class="mt-4 text-xs text-slate-400">Associate Level</div>
+                        </a>
+
+                    </div>
+                </section>
+                
+                <footer class="pt-12 border-t border-slate-200">
+                    <div class="bg-black text-white rounded-2xl p-8 md:p-12 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl shadow-slate-200">
+                        <div>
+                            <h2 class="font-display text-2xl md:text-3xl font-medium mb-2">Check out version 2.0</h2>
+                            <p class="text-slate-400 text-sm md:text-base">A completely new portfolio experience with updated case studies.</p>
+                        </div>
+                        <a href="https://paragniraula.com.np" class="whitespace-nowrap px-6 py-3 bg-white text-black rounded-lg font-medium hover:bg-slate-200 transition-colors inline-flex items-center gap-2">
+                            Go to paragniraula.com.np <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
                     
-                    <div class="relative border-l-2 border-slate-200 ml-2 space-y-8 pl-6 py-2">
-                        <div class="relative">
-                            <span class="absolute -left-[31px] top-1 h-4 w-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"></span>
-                            <h4 class="font-semibold text-slate-900">Orchid International College</h4>
-                            <p class="text-sm text-slate-500 italic mb-1">Bijayachowk, Kathmandu</p>
-                            <p class="text-xs font-semibold uppercase tracking-wider text-blue-600 mb-2">April, 2020 – Present</p>
-                            <p class="text-sm text-slate-700">B.Sc. CSIT [Currently in 8th Semester]</p>
-                        </div>
-                        
-                        <div class="relative">
-                            <span class="absolute -left-[31px] top-1 h-4 w-4 rounded-full bg-slate-300 border-4 border-white shadow-sm"></span>
-                            <h4 class="font-semibold text-slate-900">Kathmandu Model College</h4>
-                            <p class="text-sm text-slate-500 italic mb-1">Baghbazar, Kathmandu</p>
-                            <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">July, 2017 – June, 2019</p>
-                            <p class="text-sm text-slate-700">High School [Science]</p>
-                        </div>
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-8 text-sm text-slate-400">
+                        <p>&copy; <span id="year"></span> Parag Niraula. All rights reserved.</p>
+                        <p>Designed with Tailwind & Space Grotesk</p>
                     </div>
-                </section>
+                </footer>
 
-                <section id="Technical_Skills" class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-                    <h3 class="text-xl font-bold text-slate-800 border-b border-slate-100 pb-3 mb-4 flex items-center gap-2">
-                        <i class="bi bi-gear-wide-connected text-blue-600"></i> Technical Skills
-                    </h3>
-                    
-                    <div class="space-y-4">
-                        <div>
-                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Languages</h5>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Bash</span>
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">C++</span>
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Python</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Frameworks & Backend</h5>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium">Django</span>
-                                <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium">Flask</span>
-                                <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium">RBAC</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">DevOps & Cloud</h5>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">Docker</span>
-                                <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">Azure</span>
-                                <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">Jenkins</span>
-                                <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm font-medium">GitHub Actions</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">OS & Version Control</h5>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Linux</span>
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Git</span>
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Mercurial</span>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Tools</h5>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Illustrator</span>
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">Photoshop</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <div class="lg:col-span-8 space-y-8">
-                <section id="Projects">
-                    <div class="flex items-center justify-between mb-4">
-                        <h3 class="text-2xl font-bold text-slate-800 flex items-center gap-2">
-                            <i class="bi bi-files text-blue-600"></i> Projects
-                        </h3>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        
-                        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                            <div class="flex justify-between items-start mb-3">
-                                <h4 class="text-lg font-bold text-slate-900">Nepal Telecom Ltd.</h4>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-bold uppercase rounded">Internship</span>
-                            </div>
-                            <h5 class="text-sm font-semibold text-slate-600 mb-4">Full Stack Developer (Django)</h5>
-                            <ul class="space-y-2 text-sm text-slate-600 list-disc pl-4">
-                                <li>Implemented Role Based Access Control (RBAC).</li>
-                                <li>Extracted GeoJSON map data via Overpass Turbo.</li>
-                                <li>Integrated Firebase for real-time data storage.</li>
-                                <li>Implemented deployment CI pipelines using Jenkins & Docker.</li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                            <div class="flex justify-between items-start mb-3">
-                                <h4 class="text-lg font-bold text-slate-900">Order Matching Engine</h4>
-                                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase rounded">College</span>
-                            </div>
-                            <h5 class="text-sm font-semibold text-slate-600 mb-4">Flask Application</h5>
-                            <ul class="space-y-2 text-sm text-slate-600 list-disc pl-4">
-                                <li>Real-time updates via <strong>Flask-SocketIO</strong>.</li>
-                                <li>In-memory order matching with Python threading.</li>
-                                <li>Optimized SQL queries & real-time constraint validation.</li>
-                                <li>Modular architecture using Flask Blueprints.</li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                            <div class="flex justify-between items-start mb-3">
-                                <h4 class="text-lg font-bold text-slate-900">CRUD App in C</h4>
-                                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase rounded">College</span>
-                            </div>
-                            <h5 class="text-sm font-semibold text-slate-600 mb-4">System Programming</h5>
-                            <ul class="space-y-2 text-sm text-slate-600 list-disc pl-4">
-                                <li>Used memory-mapped files as a custom database.</li>
-                                <li>Implemented PK/FK logic using C structs.</li>
-                                <li>Adhered to secure memory principles (MS SAL).</li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                            <div class="flex justify-between items-start mb-3">
-                                <h4 class="text-lg font-bold text-slate-900">Student Mgmt System</h4>
-                                <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase rounded">Web App</span>
-                            </div>
-                            <h5 class="text-sm font-semibold text-slate-600 mb-4">ASP.NET Framework</h5>
-                            <ul class="space-y-2 text-sm text-slate-600 list-disc pl-4">
-                                <li>Designed wireframes and prototypes.</li>
-                                <li>Developed backend with SQL Server integration.</li>
-                                <li>Automated testing using Selenium.</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </section>
-            </div>
-
-            <div class="lg:col-span-12">
-                <section id="Certification" class="mt-8">
-                    <h3 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
-                        <i class="bi bi-award text-blue-600"></i> Certifications
-                    </h3>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                        
-                        <a href="https://www.credly.com/badges/339d858e-3dd2-408a-a38e-b2abc03200da/public_url" target="_blank" class="block group">
-                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-blue-300 hover:shadow-md transition">
-                                <div class="flex items-center gap-3 mb-2">
-                                    <i class="bi bi-cpu text-blue-600 text-xl"></i>
-                                    <span class="text-xs font-bold text-blue-600 uppercase">Intel</span>
-                                </div>
-                                <h4 class="font-bold text-slate-800 group-hover:text-blue-600 transition">Cloud DevOps</h4>
-                                <p class="text-xs text-slate-500 mt-2">Mar 2025 - Mar 2028</p>
-                            </div>
-                        </a>
-
-                        <a href="https://www.credly.com/badges/d74c2565-7aa3-4a3b-aa64-19cf1745b076/public_url" target="_blank" class="block group">
-                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-blue-300 hover:shadow-md transition">
-                                <div class="flex items-center gap-3 mb-2">
-                                    <i class="bi bi-cpu text-blue-600 text-xl"></i>
-                                    <span class="text-xs font-bold text-blue-600 uppercase">Intel</span>
-                                </div>
-                                <h4 class="font-bold text-slate-800 group-hover:text-blue-600 transition">Cloud Deployments</h4>
-                                <p class="text-xs text-slate-500 mt-2">Mar 2025 - Mar 2028</p>
-                            </div>
-                        </a>
-
-                        <a href="https://www.credly.com/badges/85670e43-2422-442d-8376-f3373e921434/" target="_blank" class="block group">
-                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-blue-300 hover:shadow-md transition">
-                                <div class="flex items-center gap-3 mb-2">
-                                    <i class="bi bi-cpu text-blue-600 text-xl"></i>
-                                    <span class="text-xs font-bold text-blue-600 uppercase">Intel</span>
-                                </div>
-                                <h4 class="font-bold text-slate-800 group-hover:text-blue-600 transition">Cloud Principles</h4>
-                                <p class="text-xs text-slate-500 mt-2">Feb 2025 - Feb 2028</p>
-                            </div>
-                        </a>
-
-                        <a href="https://www.credly.com/badges/079b74c6-c83b-48e1-9f1b-e26172638685/public_url" target="_blank" class="block group">
-                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-orange-300 hover:shadow-md transition">
-                                <div class="flex items-center gap-3 mb-2">
-                                    <i class="bi bi-amazon text-orange-500 text-xl"></i>
-                                    <span class="text-xs font-bold text-orange-500 uppercase">AWS Educate</span>
-                                </div>
-                                <h4 class="font-bold text-slate-800 group-hover:text-orange-600 transition">Intro to Cloud 101</h4>
-                                <p class="text-xs text-slate-500 mt-2">Feb 2025</p>
-                            </div>
-                        </a>
-
-                        <a href="https://www.credly.com/badges/3b9c1ba4-4137-4eb6-8321-9eb6d1be6336/" target="_blank" class="block group">
-                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-orange-300 hover:shadow-md transition">
-                                <div class="flex items-center gap-3 mb-2">
-                                    <i class="bi bi-amazon text-orange-500 text-xl"></i>
-                                    <span class="text-xs font-bold text-orange-500 uppercase">AWS Educate</span>
-                                </div>
-                                <h4 class="font-bold text-slate-800 group-hover:text-orange-600 transition">Generative AI</h4>
-                                <p class="text-xs text-slate-500 mt-2">Feb 2025</p>
-                            </div>
-                        </a>
-
-                        <a href="https://www.credly.com/badges/b659d139-4f84-4749-af73-40a2f4944da5" target="_blank" class="block group">
-                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-red-300 hover:shadow-md transition">
-                                <div class="flex items-center gap-3 mb-2">
-                                    <i class="bi bi-database text-red-600 text-xl"></i>
-                                    <span class="text-xs font-bold text-red-600 uppercase">Oracle</span>
-                                </div>
-                                <h4 class="font-bold text-slate-800 group-hover:text-red-600 transition">OCI Developer 2020</h4>
-                                <p class="text-xs text-slate-500 mt-2">Jul 2020 – Jan 2022</p>
-                            </div>
-                        </a>
-                        
-                         <a href="https://www.credly.com/badges/c61e33af-16c9-4296-9e28-af529da8b921/" target="_blank" class="block group">
-                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-red-300 hover:shadow-md transition">
-                                <div class="flex items-center gap-3 mb-2">
-                                    <i class="bi bi-database text-red-600 text-xl"></i>
-                                    <span class="text-xs font-bold text-red-600 uppercase">Oracle</span>
-                                </div>
-                                <h4 class="font-bold text-slate-800 group-hover:text-red-600 transition">OCI Foundations</h4>
-                                <p class="text-xs text-slate-500 mt-2">Apr 2020 – Oct 2021</p>
-                            </div>
-                        </a>
-
-                        <a href="https://www.credly.com/badges/37399184-bab6-46e3-8484-ecd3fe003592" target="_blank" class="block group">
-                            <div class="bg-white rounded-xl p-4 border border-slate-100 h-full hover:border-red-300 hover:shadow-md transition">
-                                <div class="flex items-center gap-3 mb-2">
-                                    <i class="bi bi-database text-red-600 text-xl"></i>
-                                    <span class="text-xs font-bold text-red-600 uppercase">Oracle</span>
-                                </div>
-                                <h4 class="font-bold text-slate-800 group-hover:text-red-600 transition">Cloud Operations</h4>
-                                <p class="text-xs text-slate-500 mt-2">Jul 2020 – Jan 2022</p>
-                            </div>
-                        </a>
-
-                    </div>
-                </section>
-            </div>
+            </main>
         </div>
-
-        <footer class="mt-12 border-t border-slate-200 pt-6 text-center text-slate-500 text-sm">
-            <p>&copy; 2025 Parag Niraula. All rights reserved.</p>
-        </footer>
-
     </div>
 
     <script>
+        // Modal Logic
         document.addEventListener('DOMContentLoaded', () => {
             const modal = document.getElementById('redirectModal');
-            
-            // Show modal after a small delay for smoother UX
+            // Auto Update Year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
             setTimeout(() => {
                 modal.classList.remove('opacity-0', 'pointer-events-none');
-            }, 500);
+            }, 800);
         });
 
         function closeModal() {
             const modal = document.getElementById('redirectModal');
             const content = document.getElementById('modalContent');
             
-            // Add scale down animation
             content.classList.remove('scale-100');
             content.classList.add('scale-95');
-            
-            // Fade out
             modal.classList.add('opacity-0');
             
             setTimeout(() => {
                 modal.classList.add('pointer-events-none');
-            }, 300);
+            }, 500);
         }
     </script>
 </body>
